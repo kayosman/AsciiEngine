@@ -1,5 +1,6 @@
 import pygame
 
+
 class Window:
     def __init__(self, width, height, name):
         self.width = width
@@ -15,13 +16,13 @@ class Window:
     def get_name(self) -> str:
         return self.name
 
-    def set_name(self, new_name):
+    def set_name(self, new_name) -> None:
         self.name = new_name
 
-    def set_width(self, new_width):
+    def set_width(self, new_width) -> None:
         self.width = new_width
 
-    def set_height(self, new_height):
+    def set_height(self, new_height) -> None:
         self.height = new_height
 
     def set_screen(self, width, height) -> pygame.display.set_mode():
@@ -46,4 +47,4 @@ class Window:
             fps = pygame.time.Clock.tick(fps)
         except pygame.error():
             print(f"{fps}")
-        return fps.set_fps(fps)
+        return print(fps.set_fps(fps))
